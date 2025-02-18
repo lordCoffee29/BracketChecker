@@ -1,23 +1,6 @@
 # Assignment 3: Answers
 
-**Complete this document, commit your changes to Github and submit the repository URL to Canvas.** Keep your answers short and precise.
 
-Your Name: Anika Saiprabhu
-
-Used free extension: [ ] 24 hrs or [ ] 48 hrs
-
-[x] Early submission (48 hrs)
-
-[x] Bonus work. Describe: ... 
-
-- Implemented code to avoid brackets in single-line (//) comment
-- Implemented code to avoid brackets in multi-line (/* */) comment
-- Added additional test files for beter testing
-
-Place [x] for what applies.
-
-
-## Answers
 1. How long did the program take to check all three test files with each version?  Describe what differences in run time you expect for your implementation (use Big-O notation).
 
    > The stack array version for the three files took 3759 milliseconds.  The list version for the three files took 8948 milliseconds.  The stack array version with the extra files took 7250 milliseconds.  The list version with the extra files took 10724 milliseconds.  I expected them to be similar because the code I wrote for each is pretty much the same but with different functions.  However, I expected the list version to be slower because I used push_back, meaning the list had to iterate through the entire list before adding a value (O(N)).  On the other hand, the array could have items added to it without having to iterate through (O(1)).  Since most of this project was adding onto the stack, it makes sense that it took the linked list slightly longer.
